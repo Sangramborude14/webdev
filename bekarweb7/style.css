@@ -1,0 +1,10 @@
+#H1{
+text-align: center;
+font-size:10rem;
+}
+body{
+    display: flex;
+  justify-content: center; /* Centers items along the main axis (horizontally by default) */
+  align-items: center;    /* Centers items along the cross axis (vertically by default) */
+  height: 100vh;
+}

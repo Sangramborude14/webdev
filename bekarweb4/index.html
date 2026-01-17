@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Website
+  </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="div1">
+  <h1> Random Password Genrator🔒</h1><br>
+
+<label>Length</label>
+<input type="number" id="number_input" min="1"max="15"value="1"><br>
+<input type="checkbox" id="button1">
+<label>Upper Case</label><br>
+<input type="checkbox" id="button2">
+<label>Lower Case</label><br>
+<input type="checkbox" id="button3">
+<label>Numbers</label><br>
+<input type="checkbox" id="button4">
+<label>Symbols</label><br>
+<input type="button" onclick="generate()"value="🔑">
+<br>
+</div>
+<div id="div2">
+<p id="p1">YOUR PASSWORD IS:</p>
+<p id="passwordResult"></p>
+</div>
+
+<script src="index.js"></script>
+</body>

@@ -1,0 +1,42 @@
+body{
+    font-family: Verdana;
+    text-align:center;
+    background-color: aliceblue;
+}
+
+#div1{
+    border: 3px solid black;
+    width: 25%;
+    aspect-ratio: 9/1;
+    transform:translate(600px,100px);
+}
+#submit{
+    font-size: 1.5em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: tomato;
+    transition: all 0.3s ease;
+    transform: translate(0px,10px);
+    
+}
+#submit:hover{
+    background-color: rgb(255, 86, 56);
+    transform: scale(1.1);
+    transform:translate(0px,8px);
+    padding: 5px 24px;
+    
+}
+#myLabel{
+    font-size: 3em;
+    background-color: antiquewhite;
+}
+label{
+    color:black;
+    font-size:x-large;
+    font-weight: 400;
+    font-family: 'Gill Sans';
+}
+
+#resultElement{
+    font-size:larger;
+}

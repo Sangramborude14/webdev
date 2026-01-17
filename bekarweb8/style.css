@@ -1,0 +1,81 @@
+body{
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    grid-template-columns:3;
+    
+
+}
+div{
+    display: grid;
+    grid-template-columns:1;
+    border:solid 2px black;
+    border-radius: 5px;
+    
+}
+#div2{
+    border:none;
+    text-align: center;
+    padding: 4px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size:2.5rem;
+    background-color:antiquewhite;
+    border-radius: none;
+    height: 10vh;
+    cursor:default;
+    transition: all ease 0.2s;
+}
+#div3{
+    border: none;
+    background-color: hsl(34, 78%, 71%);
+    border-radius: none;
+    justify-content: center;
+    height:40vh;
+    margin:none;
+}
+button{
+
+    margin:10px;
+    padding:5px;
+    font-family:Verdana;
+    font-weight:bold;
+    width:6rem;
+    height:2rem;
+    border:none;
+    border-radius:5px;
+    box-shadow: 
+        0 1px 2px rgba(0,0,0,0.07), 
+        0 2px 4px rgba(0,0,0,0.07), 
+        0 4px 8px rgba(0,0,0,0.07), 
+        0 8px 16px rgba(0,0,0,0.07),
+        0 16px 32px rgba(0,0,0,0.07);
+    transition:all ease 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+    transform:rotate(4deg);
+    background-color: black;
+    border:3px solid black;
+    color:white;
+}
+
+#btn1{
+    background-color: lightgreen;
+}
+#btn2{
+    background-color: tomato;
+}
+#btn3{
+    background-color:lightblue;
+}
+h1{
+    font-size:3rem;
+}
+#div2:hover{
+    color:white;
+    text-shadow: 0 0 5px #fff,       /* Layer 1: Sharp inner glow */
+        0 0 10px #00d2ff,   /* Layer 2: Medium glow */
+        0 0 20px #00d2ff,   /* Layer 3: Wide diffused glow */
+        0 0 40px #00d2ff;
+}

@@ -1,0 +1,14 @@
+#myBox{
+    background-color: lightblue;
+    width:200px;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size:7.5rem;
+    transition: all ease 0.1s;
+}
+body{
+    margin: 0px;
+}

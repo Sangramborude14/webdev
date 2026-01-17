@@ -1,0 +1,253 @@
+  .card{
+  border:1px solid rgb(23, 21, 21);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%,0.1);
+  padding:20px;
+  margin:10px;
+  text-align:center;
+  max-width: 250px;
+  display:inline-block;
+
+}
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial;
+  margin: 0;
+  color: hsla(270, 64%, 9%, 0.4)
+}
+.card .card-text{
+  font-family: Arial;
+  color:rgb(74, 73, 73);
+}
+
+.student{
+  font-family: Arial;
+  font-size: 2em;
+  padding:10px;
+  border: 1px solid black;
+
+}
+.student p{
+  margin: 0;
+}
+
+.welcome-message{
+   font-size: 2.5rem;
+   background-color:hsla(0, 0%, 0%,0.9);
+  color:white;
+  padding: 10px;
+  border-radius:5px;
+  margin: 0;
+}
+
+.login-prompt{
+font-size: 2.5rem;
+   background-color:hsla(0, 92%, 33%, 0.9);
+  color:white;
+  padding: 10px;
+  border-radius:5px;
+  margin: 0;
+}
+
+.list-category{
+  font: size 2.5em;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 10px;
+  text-align :center;
+  border: 3px solid ;
+  border-radius: 5px;
+  background-color: rgb(84, 84, 189);
+}
+
+.list-items li{
+font-size: 2em;
+list-style: none;
+color: black;
+text-align: center;
+margin:0;
+}
+
+.list-items li:hover{
+  color: rgb(159, 0, 0);
+  cursor: pointer;
+
+}
+
+body{
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 220, 220);
+  background-image: url('assets/wallpaper1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin:0px;
+  min-height: 100vh;
+  align-items: center;
+}
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+h1{
+  margin: 50px;
+  font-size: 3rem;
+}
+.colorDisplay{
+  width:300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid black;
+}
+h2{
+  font-size:3rem;
+  color:rgb(4, 56, 39);
+}
+input[type= "text"]{
+  padding: 5px;
+  font-family: monospace;
+  background-color: azure;
+  border: none;
+  border-radius: 5px;
+  font-size:x-large;
+  transition:all ease 0.3s;
+
+}
+input:hover[type="text"]{
+  margin-right: 1em;
+  transform: scale(1.05);
+}
+input[type= "text"]:focus{
+
+  border-radius: 10px;
+  font-size: x-large;
+}
+input[type= "text"]:focus:hover{
+
+  border-radius: 10px;
+  font-size: x-large;
+  transform: scale(1.05);
+}
+input[type= "text"]::placeholder{
+  border:none;
+}
+
+li{
+  font-size: larger;
+  font-family:Courier;
+  font-weight: bold;
+  text-align: start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: all ease 0.3s;
+  margin-bottom: 10px;
+}
+li:hover{
+  transform: scale(1.04);
+  color:red;
+  background-color:rgba(220, 220, 220, 0.674) ;
+}
+#btn1{
+  padding: 10px;
+  margin:10px;
+  width: 4.5rem;
+  font-size:15px;
+  background-color: green;
+  border:1px solid rgb(1, 39, 1);
+  font-weight: bold;
+  transition: all ease 0.2s;
+
+}
+#btn1:hover{
+  color:white;
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+.to-do-list{
+  font-family: Arial;
+  text-align: center;
+  margin-top: 100px;
+
+}
+h1{
+  font-size: 4rem;
+
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.3;
+  margin-left: 30px;
+}
+.add-button{
+  background-color: green;
+
+}
+.add-button:hover{
+  background-color: hsl(120, 100%, 15%);
+  
+}
+.delete-button{
+  background-color: rgb(255, 28, 28);
+  transition: all ease 0.3s;
+
+}
+.delete-button:hover{
+  background-color: hsl(0, 94%, 34%);
+  transform: scale(0.90);
+  
+}
+.up-btn,.down-btn{
+  background-color: hsl(180, 66%, 41%);
+
+}
+.up-btn:hover,.down-btn:hover{
+  background-color: hsl(180, 66%, 31%);
+  transform:scale(0.90)
+  
+}
+.text{
+  flex:1;
+}
+
+#useEffect{
+  display: flex;
+  flex-direction: column;
+}
+button{
+  margin: 20px;
+  background-color: aquamarine;
+  color:black;
+}
+.clock-container{
+backdrop-filter:blur(5px);
+}
+.clock{
+  color:white;
+  font-size:6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-shadow:3px 3px 5px black;
+}

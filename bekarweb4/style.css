@@ -1,0 +1,93 @@
+body{
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+}
+#div1{
+    transform: translate();
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    aspect-ratio: 16/9;
+    width: 25%;
+    border: 3px solid red;
+    border-radius: 10px;
+    font-size:larger;
+    font-family: Verdana;
+}
+#div1 label{
+    color:green;
+    padding-bottom: 25px;;
+}
+#button3{
+    transform: translate(-12px,0px);
+}
+#button4{
+        transform: translate(-14px,0px);
+}
+
+input[type="number"]{
+   background-color: rgb(89, 102, 86);
+   border:None;
+   border-radius: 4px;
+   height:8%;
+   width: 12%;
+   text-align:right;
+   color:rgb(210, 209, 209);
+   font-family: Verdana;
+   font-weight:bold;
+   font-size:80%;
+   transition:all 0.3s ease;
+}
+input[type="number"]:hover{
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   color:rgb(0, 0, 0);
+   border:1px dotted green;
+}
+#div1 label:hover{
+    color:aliceblue;
+}
+input[type="checkbox"] {
+  accent-color: #5f79f0;
+}
+input[type="checkbox"]:hover{
+  accent-color: #41954b;
+}
+#div2{
+    transform: translate();
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    transform:translate(-300px,250px);
+    font-size:larger;
+    font-family: Verdana;
+}
+input[type="button"]{
+    margin-top:15px;
+    background-color: rgb(255, 17, 17);
+   border:None;
+   border-radius: 5px;
+   width:12%;
+   aspect-ratio: 1/1;
+   font-size: larger;
+   padding:none;
+}
+input[type="button"]:hover{
+    background-color:white;
+}
+input[type="button"]:active{
+    background-color:rgb(10, 30, 16);
+}
+#passwordResult{
+    color:rgb(0, 255, 21);
+    font-weight: bold;
+    font-family:cursive;
+    font-size:larger;
+}

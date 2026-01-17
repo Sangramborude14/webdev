@@ -1,0 +1,57 @@
+h2{
+  font-size:3rem;
+  color:rgb(4, 56, 39);
+}
+input[type= "text"]{
+  padding: 5px;
+  font-family: monospace;
+  background-color: azure;
+  border: none;
+  border-radius: 5px;
+  font-size:x-large;
+  
+}
+input[type= "text"]:focus{
+  border:none;
+  border-radius: 10px;
+  font-size: x-large;
+}
+input[type= "text"]::placeholder{
+  border:none;
+}
+
+li{
+  font-size: larger;
+  font-family:Courier;
+  font-weight: bold;
+  text-align: start;
+  cursor: pointer;
+
+}
+li:hover{
+  transform: scale(1.04);
+  color:red;
+  background-color:rgba(220, 220, 220, 0.674) ;
+}
+#btn1{
+  padding: 10px;
+  margin:10px;
+  width: 4.5rem;
+  font-size:15px;
+  background-color: green;
+  border:1px solid rgb(1, 39, 1);
+  font-weight: bold;
+  transition: all ease 0.2s;
+
+}
+#btn1:hover{
+  color:white;
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+body{
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(220, 220, 220);
+}
