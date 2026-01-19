@@ -1,10 +1,8 @@
-
-import ToDoList from './ToDoList.jsx'
-import MyComponent from './MyComponent.jsx';
-import DigitalClock from './DigitalClock.jsx';
+import React from "react";
+import ComponentA from "./ComponentA";
 
 function App() {
-return(<><DigitalClock/></>)
+return(<><ComponentA/></>)
 }
 
 export default App

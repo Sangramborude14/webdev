@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+
 function DigitalClock() {
     const [time, setTime] = useState(new Date());
 
@@ -8,7 +10,7 @@ function DigitalClock() {
 
         return () => clearInterval(intervalId);
     }, []);
-
+        
     function formatTime() {
         let hours = time.getHours();
         const minutes = time.getMinutes();
@@ -31,3 +33,4 @@ function DigitalClock() {
         </div>
     );
 }
+export default DigitalClock;
