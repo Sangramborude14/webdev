@@ -1,0 +1,87 @@
+body{
+  background-color:   rgb(1, 1, 1);
+  color:white;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+
+}
+
+.display{
+  border:none;
+  border-radius:5px;
+  background-color: rgb(147, 172, 164);
+  width: 20rem;
+  height:10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  font-family: monospace;
+  padding:15px;
+  margin:20px;
+  transition: all ease 0.3s;
+}
+
+.display:hover{
+  transform: scale(1.07);
+  font-size:4.9rem;
+  color:black;
+  padding:20px;
+
+}
+.controls{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.controls button{
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  font-size:1.8rem;
+  font-weight: bold;
+  font-family: Verdana;
+  border:none;
+}
+.start-button{
+  background-color: green;
+  transition: all ease 0.3s;
+}
+.start-button:hover{
+  background-color: lightgreen;
+  transform: scale(1.05);
+  color:black;
+  border:1px solid;
+}
+.stop-button{
+  background-color: red;
+  transition: all ease 0.3s;
+}
+.stop-button:hover{
+  background-color: tomato;
+  transform: scale(1.05);
+  color:black;
+  border:1px solid;
+}
+.reset-button{
+  background-color:blue;
+  transition: all ease 0.3s;
+}
+.reset-button:hover{
+  background-color: lightblue;
+  transform: scale(1.05);
+  color:black;
+  border:1px solid;
+}
+
+.stopwatch{
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: 10px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  
+}
+
