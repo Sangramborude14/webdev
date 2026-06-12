@@ -5,35 +5,40 @@ let stock = {
     toppings : ["chocolate","pea"]
 }
 
+let is_shop_open = true;
 
-function order(fruit,callback) {
-    setTimeout(() => {
-        console.log(`${stock.Fruits[fruit]} was selected`);
-        callback();
-    },2000);//two seconds to place order
- 
+function time(ms){
+    return new Promise((resolve,reject) => { 
+        if (is_shop_open){
+            setTimeout(resolve,ms);
+        }else{
+            reject(console.log(`shop is closed`));
+        }
+    })
 }
-function production(){
 
-    setTimeout(() => {console.log(`production has started`)//immediate response
-                    setTimeout(() => {
-                        console.log("the fruit has been chopped");//2 seconds to chop fruits
-                        setTimeout(() => {
-                            console.log(`${stock.liquid[0]} and ${stock.liquid[1]} was added`);//1 second to add water
-                            
-                            setTimeout(() => {console.log(`the machine was started`)//1 second to start machine
-                                    setTimeout(() => {
-                                        console.log(`${stock.holder[0]} was selected`);//2 sec to select holder
-                                        
-                                    setTimeout(() => {console.log(`${stock.toppings[0]} was added as a topping `)}) // 3 sec to add a topping
-                                        
-                                        setTimeout(() => {
-                                            console.log(`serve icecream`) // serve icecream
-                                        },2000)
-                                    },2000);
-                            },1000)
-                        },1000);
-                    },2000);
-    },0)
+async function kitchen () {
+ try{
+    await time(2000);
+    console.log(`${stock.Fruits[0]} was selected`)
+    await time(0);
+    console.log(`Production has started`)
+    await time(2000);
+    console.log(`the fruit was cut`)
+    await time(1000);
+    console.log(`water and ice was selected`)
+    await time(1000);
+    console.log(`start the machine`)
+    await time(2000);
+    console.log(`cone was placed on holder`)
+    await time(3000);
+    console.log(`chocolate was selected`)
+    await time(2000);
+    console.log(`ice cream was served`)
+ }
+ catch(error){console.log(`customer left`)}
+ finally{console.log(`day ended shop is closed`)}
 }
-order(0,production);
+
+kitchen();
+
