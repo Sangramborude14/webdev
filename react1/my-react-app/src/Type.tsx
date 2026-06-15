@@ -64,3 +64,62 @@ function renderPage(status: NetworkState){
             return "Error ...";
     }
 }
+
+// Type Alias vs Interface
+// 1. Use extends for Interface and & for type for extending
+// 2. Interface is variable while type is fixed
+// 3. Interface is faster
+
+
+//Custom Guard
+type User = {
+    name: string;
+}
+type Admin = {
+    name: string;
+    permissions: string[];
+}
+
+function isAdmin(person: User | Admin): person is Admin{
+    return "permissions" in person;
+}
+
+// Generic
+function wrapInArray<T>(item: T): T[]{
+    return [item];
+}
+
+interface ApiResponse<T>{
+    status: "success" | "error";
+    code: number;
+    data: T;
+}
+//Usage  as a User
+interface Users {
+    id: number;
+    name: string;
+}
+const userResponse: ApiResponse<Users> = {
+    status:"success",
+    code:200,
+    data: {id: 1, name: "Alice"},
+}
+//Usage as a Product
+interface Product {
+    sku: string;
+    price: number;
+}
+const productResponse: ApiResponse<Product> = {
+    status: "success",
+    code: 200,
+    data: {sku: "PROD-123",price: 29.99}
+}
+//Generic Contraints
+interface HasLength {
+    length: number;
+}
+
+function logLength<T extends HasLength>(item: T): void{
+    console.log(item.length);
+}
+
